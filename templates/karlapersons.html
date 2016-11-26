@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Karla HTML</title>
+</head>
+<body>
+
+	<h1>Personas Karla</h1>
+
+	
+	{% for p in person %}
+		<ul>
+			<li> {{p.name}} </li> 
+			<li> {{p.age}}</li>
+			<li> {{p.description}} </li>
+		</ul>
+	{% endfor %}
+
+
+</body>
+</html>
