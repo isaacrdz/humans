@@ -5,12 +5,18 @@
 	<title>Document</title>
 </head>
 <body>
+
 	<h1>Persons one</h1>
-<ol>
+
 	
 	{% for p in person %}
-		<li>{{p.name}} | {{p.age}} | {{p.description}} </li>
+		<ul>
+			<li> {{p.name}} </li> 
+			<li> {{p.age}}</li>
+			<li> {{p.description}} </li>
+		</ul>
 	{% endfor %}
-</ol>
+
+
 </body>
 </html>
