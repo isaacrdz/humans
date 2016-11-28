@@ -1,15 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
-	<h1>Aqui va una lista con los paises</h1>
-		<ol>
-		{% for c in country %}
-				<li>{{c.name}}</li>
-		{% endfor %}
-		</ol>
-</body>
-</html>
+{% extends "base.html" %}	
+{% block title %}
+	<title>Countries</title>
+	<meta description="Esta es la pagina para desplegar una lista de los paises"/>
+{% endblock title %}
+
+{% block countries %}
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Aqui va una lista con los paises</h1>
+					<ol>
+					{% for c in country %}
+						<li>{{c.name}}</li>
+					{% endfor %}
+					</ol>
+			</div>
+		</div>
+	</div>
+{% endblock countries %}
