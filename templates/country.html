@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Aqui va una lista con los paises</h1>
+		<ol>
+		{% for c in country %}
+				<li>{{c.name}}</li>
+		{% endfor %}
+		</ol>
+</body>
+</html>
