@@ -1,22 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block title %}
+	<title>Persons</title>
+	<meta description="Esta es la pagina de humans"/>
+{% endblock title %}
 
-	<h1>Persons one</h1>
-
-	
+{% block persons %}
+	<h1 class="text-center">Persons one</h1>
+<div class="container">
+	<div class="row">
 	{% for p in person %}
-		<ul>
-			<li> {{p.name}} </li> 
-			<li> {{p.age}}</li>
-			<li> {{p.description}} </li>
-		</ul>
+		<div class="col-md-4">
+			<ul class="list-group">
+				<li class="list-group-item active">Person</li>
+				<li class="list-group-item">Nombre:{{p.name}} </li>
+				<li class="list-group-item">Edad:{{p.age}} </li>
+				<li class="list-group-item">Descripcion: {{p.description}}</li>
+			</ul>
+		</div>
 	{% endfor %}
-
-
-</body>
-</html>
+	</div>
+</div>
+{% endblock persons %}
