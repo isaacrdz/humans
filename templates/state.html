@@ -1,0 +1,20 @@
+{% extends "base.html" %}	
+{% block title %}
+	<title>States</title>
+	<meta description="Esta es la pagina para desplegar una lista de los estados"/>
+{% endblock title %}
+
+{% block state %}
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Aqui va una lista con los estados</h1>
+					<ol>
+					{% for s in state %}
+						<li>{{s.name}}</li>
+					{% endfor %}
+					</ol>
+			</div>
+		</div>
+	</div>
+{% endblock state %}
