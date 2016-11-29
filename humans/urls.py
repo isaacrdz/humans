@@ -7,4 +7,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^', include('persons.urls')),
     url(r'^', include('countries.urls')),
+    url(r'^', include('state.urls')),
 ] 
