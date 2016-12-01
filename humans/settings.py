@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'state.apps.StateConfig',
     'countries.apps.CountriesConfig',
     'persons.apps.PersonsConfig',
     'django.contrib.admin',
